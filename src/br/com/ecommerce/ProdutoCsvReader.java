@@ -37,11 +37,4 @@ public class ProdutoCsvReader {
         
         return produtos;
     }
-    
-    public static void main(String[] args) {
-        Map<Integer, Produto> produtos 
-                = ProdutoCsvReader.carregarTodos();
-        
-        produtos.forEach((id, p) -> System.out.println(p));
-    }
 }
