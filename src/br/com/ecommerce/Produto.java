@@ -30,4 +30,25 @@ public class Produto {
         
         this.quantidade -= quantidade;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        
+        builder.append("{\n");
+        builder.append("\tid: ");
+        builder.append("\t" + this.id);
+        builder.append(",\n");
+        builder.append("\tnome: ");
+        builder.append("\t" + this.nome);
+        builder.append(",\n");
+        builder.append("\tquantidade: ");
+        builder.append("\t" + this.quantidade);
+        builder.append(",\n");
+        builder.append("}\n");
+        
+        return builder.toString();
+    }
+    
+    
 }
